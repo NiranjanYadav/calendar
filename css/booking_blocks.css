@@ -1,0 +1,106 @@
+
+.hidden { visibility:hidden; }
+
+.booking_tr {
+	margin: 3px;
+}
+
+/* Same day checkout warning message */
+.warning-tr {	
+	text-decoration: none;
+	position: relative;	
+}
+
+.border-red {
+	border-width: 2px;
+	border-color: red;
+	border-style: solid;
+}
+
+.warning-tr
+{
+	background-color: white;
+}
+
+.warning-tr span.warning, span.warning:hover {
+	margin-left: -999em;
+	position: absolute;
+	z-index: 10;
+}
+
+.warning-tr:hover span.warning {
+	border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	position: relative; 
+	left: -300px;
+	top: -4px;
+	float: left;
+	z-index: 200;
+	margin-left: 0; 
+	width: 250px;
+}
+
+.warning 
+{
+	background: #FFFFAA; border: 1px solid #FFAD33;  
+	padding: 0.5em 0.8em 0.8em 2em; 
+	white-space: normal; /* To override Calendar's common.css's .fc-event class's white-space: nowrap; */
+}
+
+.warning-div
+{
+	 position: absolute; 
+	 z-index: 10; /* Calendar block's z-index is 8. */
+}
+
+
+/* Reservation */
+.state0 {
+	background-color:#e6f3ff; 
+}
+
+#booking_table0 {
+	background-color:#CEE7FF;
+}
+
+/* In house */
+.state1 {
+	background-color:#DFFEA7; 
+}
+
+#booking_table1 {
+	background-color:#BBFC3C;
+}
+
+/* Checked out */
+.state2 {
+	background-color:#FFE6AA; 
+}
+#booking_table2 {
+	background-color:#FFD166;
+}
+
+/* Out of Order */
+.state3 {
+	background-color:#eeeeee; 
+}
+#booking_table3 {
+	background-color:#dddddd;
+}
+
+/* Unconfirmed Booking */
+.state7 {
+	background-color:#FFFFFF; 
+}
+
+
+.fc-event a:hover,
+.fc-event1 a:hover,
+.fc-event2 a:hover,
+.booking_tr:hover
+{
+	background-color: yellow; 
+	cursor: pointer;
+	
+}
